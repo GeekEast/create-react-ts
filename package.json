@@ -1,0 +1,22 @@
+{
+  "name": "react-typescript-boilplate",
+  "version": "0.1.0",
+  "description": "The React boilerplate with webpack, babel, typescript, jest and enzyme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "babel",
+    "typescript",
+    "jest",
+    "enzyme",
+    "husky",
+    "prettier",
+    "eslint"
+  ],
+  "author": "James Tan",
+  "license": "MIT"
+}
