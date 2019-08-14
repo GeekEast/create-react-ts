@@ -16,7 +16,21 @@ import { hot } from 'react-hot-loader';
 class App extends ...
 ```
 
-### Start 
+### Install Dependency
+```sh
+yarn
+```
+
+### Start
+```sh
+yarn start
+```
+
+### Build
+```sh
+yarn build
+```
+
 ## References
 [搭建Typescript+React项目](https://www.jianshu.com/p/5b9d330c3740)
 
