@@ -4,7 +4,11 @@
   "description": "The React boilerplate with webpack, babel, typescript, jest and enzyme.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "build": "webpack --config webpack.config.prod.ts",
+    "start": "webpack-dev-server --open --config webpack.config.dev.ts --hot",
+    "test": "jest",
+    "format": "pretty-quick",
+    "lint": "eslint './src/**/*.{tsx,ts}' --quiet"
   },
   "keywords": [
     "react",
@@ -18,5 +22,58 @@
     "eslint"
   ],
   "author": "James Tan",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeekEast/create-react-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GeekEast/create-react-ts/issues"
+  },
+  "homepage": "https://github.com/GeekEast/create-react-ts#readme",
+  "devDependencies": {
+    "@types/html-webpack-plugin": "^3.2.1",
+    "@types/mini-css-extract-plugin": "^0.8.0",
+    "@types/node": "^12.7.1",
+    "@types/react": "^16.9.1",
+    "@types/react-dom": "^16.8.5",
+    "@types/webpack": "^4.32.1",
+    "@types/webpack-bundle-analyzer": "^2.13.2",
+    "@types/webpack-dev-server": "^3.1.7",
+    "@types/webpack-merge": "^4.1.5",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "cache-loader": "^4.1.0",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^3.0.3",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "sass-loader": "^7.2.0",
+    "style-loader": "^1.0.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2",
+    "webpack-bundle-analyzer": "^3.4.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-hot-loader": "^4.12.11"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint"
+    }
+  }
 }
