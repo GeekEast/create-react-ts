@@ -16,7 +16,11 @@ import { hot } from 'react-hot-loader';
 class App extends ...
 ```
 
-### Install Dependency
+### Prepare
+- **Step 1**: `git clone git@github.com:GeekEast/create-react-ts.git project_folder_name` 
+- **Step 2**: `cd project_folder_name && rm -rf .git`
+
+### Install 
 ```sh
 yarn
 ```
@@ -32,8 +36,8 @@ yarn build
 ```
 
 ## References
-[搭建Typescript+React项目](https://www.jianshu.com/p/5b9d330c3740)
+[Typescript+Reat](https://www.jianshu.com/p/5b9d330c3740)
 
 [ESLint for Typescript](https://zhuanlan.zhihu.com/p/62401626)
 
-[Typescript中文手册](https://typescript.bootcss.com/generics.html)
+[Typescript Docs](https://typescript.bootcss.com/generics.html)
