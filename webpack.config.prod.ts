@@ -1,4 +1,4 @@
-import * as merge from 'webpack-merge'
+import merge from 'webpack-merge'
 import { config } from './webpack.config.base'
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 

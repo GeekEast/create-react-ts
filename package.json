@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.prod.ts",
     "start": "webpack-dev-server --open --config webpack.config.dev.ts --hot",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "format": "pretty-quick",
     "lint": "eslint './src/**/*.{tsx,ts}' --quiet"
   },
@@ -32,7 +32,9 @@
   },
   "homepage": "https://github.com/GeekEast/create-react-ts#readme",
   "devDependencies": {
+    "@types/enzyme": "^3.10.3",
     "@types/html-webpack-plugin": "^3.2.1",
+    "@types/jest": "^24.0.17",
     "@types/mini-css-extract-plugin": "^0.8.0",
     "@types/node": "^12.7.1",
     "@types/react": "^16.9.1",
@@ -46,18 +48,25 @@
     "awesome-typescript-loader": "^5.2.1",
     "cache-loader": "^4.1.0",
     "css-loader": "^3.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^3.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "jest-static-stubs": "0.0.1",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
     "sass-loader": "^7.2.0",
     "style-loader": "^1.0.0",
+    "ts-jest": "^24.0.2",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.3",
     "webpack": "^4.39.2",
@@ -74,6 +83,31 @@
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && npm run lint"
+    }
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "setupFiles": [
+      "<rootDir>/enzyme.setup.ts"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(jpg|jpeg|gif|png|mp4|mkv|avi|webm|swf|wav|mid)$": "jest-static-stubs/$1",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
     }
   }
 }

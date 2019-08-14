@@ -1,10 +1,10 @@
-import * as React from 'react'
+import React from 'react'
 import './App.scss'
 
-// define props
+// define props interface
 // export interface HelloProps {}
 
-// function component
+// functional component
 // const App = (props: HelloProps) => (
 // 	<h1>
 // 		Hello World!
@@ -15,7 +15,7 @@ import './App.scss'
 // class App extends React.Component<HelloProps,{}> {
 class App extends React.Component {
   render() {
-    return <h1>Hello World!</h1>
+    return <h1 className="jest">Hello World!</h1>
   }
 }
 

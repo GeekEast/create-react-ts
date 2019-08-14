@@ -1,4 +1,4 @@
-import * as merge from 'webpack-merge'
+import merge from 'webpack-merge'
 import { config } from './webpack.config.base'
 
 const prodConfig = merge(config, {

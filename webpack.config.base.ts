@@ -3,8 +3,8 @@
 
 import { resolve, join } from 'path'
 import { Configuration } from 'webpack'
-import * as HTMLWebpackPlugin from 'html-webpack-plugin'
-import * as MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import HTMLWebpackPlugin from 'html-webpack-plugin'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 
 const config: Configuration = {
   mode: 'production',
