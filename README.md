@@ -61,4 +61,4 @@ yarn start:hot
 
 ## License
 
-Create React App is open source software [licensed as MIT](https://github.com/facebook/create-react-app/blob/master/LICENSE).
+Create React App is open source software licensed as `MIT`
