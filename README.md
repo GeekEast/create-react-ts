@@ -49,6 +49,11 @@ class App extends ...
 yarn start:hot
 ```
 
+### Important
+- Don't forget install [@types/package](https://microsoft.github.io/TypeSearch/)
+- Don't forget to add [webpack loader](https://webpack.js.org/loaders/).
+- Don't forget to add `type declaration` in `typings` folder
+
 ## References
 [Typescript+Reat](https://www.jianshu.com/p/5b9d330c3740)
 
