@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.prod.ts",
-    "start": "webpack-dev-server --open --config webpack.config.dev.ts --hot",
+    "start": "webpack-dev-server --open --config webpack.config.dev.ts",
+    "start:hot": "webpack-dev-server --open --config webpack.config.dev.ts --hot",
     "test": "jest --passWithNoTests",
     "format": "pretty-quick",
     "lint": "eslint './src/**/*.{tsx,ts}' --quiet"

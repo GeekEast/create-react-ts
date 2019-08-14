@@ -1,20 +1,17 @@
 ## Create React App From Scratch
 ### Features
-- Webpack
-- Bundle Analysis `build/analyse/bundle_size.html`
-- React && ReactDOM && 
-- React Hot Loader
-- Typescript (No Babel!)
-- ESLint && Prettier && Husky
-- Jest && Enzyme
+
+| Tool                | Description                    | Branch                               |
+|---------------------|--------------------------------|--------------------------------------|
+| Git                 | Version Control                | Git, Husky                           |
+| Webpack             | Bundler                        | Mode, Server, Debugger, Analyzer     |
+| Typescript          | Transpiler and Static Testing  | awesome-typescript-loader, decorator |
+| React               | Component Web                  | Hot Load                             |
+| Test                | Test code                      | Jest, Enzyme                         |
+| Code Formatter      | Format code                    | Prettier                             |
+| Code Error Detector | Detect potential error of code | ESLint                               |
 
 
-```javascript
-...
-import { hot } from 'react-hot-loader';
-@hot(module)
-class App extends ...
-```
 
 ### Prepare
 - **Step 1**: `git clone git@github.com:GeekEast/create-react-ts.git project_folder_name` 
@@ -39,6 +36,17 @@ npm run start
 yarn build
 # or
 npm run build
+```
+
+### Hot Load
+```javascript
+...
+import { hot } from 'react-hot-loader';
+@hot(module)
+class App extends ...
+```
+```sh
+yarn start:hot
 ```
 
 ## References
