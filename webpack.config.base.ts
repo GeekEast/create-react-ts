@@ -1,10 +1,10 @@
 // https://webpack.docschina.org/configuration/
 // https://webpack.js.org/configuration/configuration-languages/
 
-import { resolve, join } from 'path'
-import { Configuration } from 'webpack'
-import HTMLWebpackPlugin from 'html-webpack-plugin'
-import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import { resolve, join } from 'path';
+import { Configuration } from 'webpack';
+import HTMLWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 const config: Configuration = {
   mode: 'production',
@@ -43,6 +43,10 @@ const config: Configuration = {
           'sass-loader' // sass -> css
         ],
         exclude: /node_modules/
+      },
+      {
+        test: /\.svg$/,
+        use: ['url-loader']
       }
     ]
   },
@@ -67,6 +71,6 @@ const config: Configuration = {
       chunkFilename: 'css/[id].css'
     })
   ]
-}
+};
 
-export { config }
+export { config };
