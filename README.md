@@ -1,4 +1,4 @@
-## Create React App From Scratch
+## Create React Typescript
 ### Features
 
 | Tool                | Description                    | Branch                               |
@@ -57,3 +57,8 @@ yarn start:hot
 [Typescript Docs](https://typescript.bootcss.com/generics.html)
 
 [Typescript Configs](https://github.com/hstarorg/HstarDoc/blob/master/%E5%89%8D%E7%AB%AF%E7%9B%B8%E5%85%B3/TypeScript%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6tsconfig%E7%AE%80%E6%9E%90.md)
+
+
+## License
+
+Create React App is open source software [licensed as MIT](https://github.com/facebook/create-react-app/blob/master/LICENSE).
